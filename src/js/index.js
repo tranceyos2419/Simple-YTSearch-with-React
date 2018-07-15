@@ -48,3 +48,19 @@ class App extends Component {
   }
 }
 ReactDOM.render(<App />, document.querySelector(".container"));
+
+// videoSearch(term) {
+//   YTSearch({ key: API_KEY, term: term }, videos => {
+//     console.log("Video ", videos);
+//     this.setState({
+//       videos: videos,
+//       selectedVideo: videos[0]
+//     }); //this.setState({videos: videos})
+//   });
+
+// import axios from "axios";
+// const API_KEY = "AIzaSyDx6RmykKBg7CF3Hl3Gxs-Ol-GyijFmVs4";
+// const URL = "https://www.googleapis.com/youtube/v3/search?part=snippet";
+// const TYPE = "video";
+
+//this.setState({videos: videos})
