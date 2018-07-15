@@ -8,9 +8,9 @@
     "build": "webpack",
     "start": "webpack-dev-server --output-public-path=/dist/",
     "onchange": "onchange \"src/scss/**/*.scss\" -- npm run scss",
-    "scss": "node-sass ./src/scss/style.scss -o ./src/css/",
     "watch:scss": "node-sass -w ./src/scss/ -o ./src/css/",
-    "precommit": "pretty-quick --staged"
+    "scss": "node-sass ./src/scss/style.scss -o ./src/css/"
+
   },
   "keywords": [],
   "author": "Yoshi",
@@ -34,9 +34,11 @@
     "style-loader": "^0.21.0",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.3",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "youtube-api-search": "0.0.5"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "lodash": "^4.17.10",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
